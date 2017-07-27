@@ -1,0 +1,66 @@
+$width-bar:40px;
+$width-bar-click:50px;
+$height-bar:2px;
+$margin-bar:5px;
+$margin-container:15px;
+
+@mixin animation-menu($Time:0.2s)
+{
+	-webkit-transition:  $Time; 
+	-o-transition:  $Time; 
+	-moz-transition:  $Time; 
+    transition:  $Time;
+}
+
+/*menu*/
+.menu-container
+{
+	display: inline-block;
+	position:fixed;
+	margin:$margin-container;
+    cursor: pointer;
+    z-index:100;
+}
+
+@for $bar from 1 through 4
+{
+	.bar#{$bar}
+	{
+	width: $width-bar;
+    height: $height-bar;
+    background-color: #fff;
+    margin: $margin-bar;
+    @include animation-menu;	
+	}
+
+	@if $bar == 1
+	{
+	.bar#{$bar}
+	  {
+	    margin-top:0px;
+	  }	
+	}
+
+	@if $bar % 2 == 0
+	{
+
+	.bar#{$bar}
+	  {
+        margin-left:15px;
+	  }
+      
+      .menu-container:hover > .bar#{$bar}
+      {
+        margin-left:0px;
+      } 
+
+	}
+	@else
+	{
+      .menu-container:hover > .bar#{$bar}
+      {
+        margin-left:15px;
+      } 
+
+	}
+}

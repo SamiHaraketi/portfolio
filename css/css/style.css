@@ -1,0 +1,117 @@
+body { margin: 0; padding: 0; }
+
+img { width: 100%; height: auto; }
+
+* { box-sizing: border-box; }
+
+[class*="col-"] { float: left; }
+
+.row::after { content: ""; clear: both; display: table; }
+
+@media only screen and (max-width: 600px) { /* For mobile phones: */
+  .col-s-1 { width: 8.33%; }
+  .col-s-2 { width: 16.66%; }
+  .col-s-3 { width: 25%; }
+  .col-s-4 { width: 33.33%; }
+  .col-s-5 { width: 41.66%; }
+  .col-s-6 { width: 50%; }
+  .col-s-7 { width: 58.33%; }
+  .col-s-8 { width: 66.66%; }
+  .col-s-9 { width: 75%; }
+  .col-s-10 { width: 83.33%; }
+  .col-s-11 { width: 91.66%; }
+  .col-s-12 { width: 100%; }
+  .display { display: none; }
+  /*social icon */
+  .social-icon img { width: 50px; height: 50px; padding: 15px; }
+  /*text-home*/
+  .text-home-1 { font-size: 12px; margin-bottom: 20px; }
+  .text-home-2 { font-size: 16px; } }
+@media only screen and (min-width: 600px) { /* For tablets: */
+  .col-m-1 { width: 8.33%; }
+  .col-m-2 { width: 16.66%; }
+  .col-m-3 { width: 25%; }
+  .col-m-4 { width: 33.33%; }
+  .col-m-5 { width: 41.66%; }
+  .col-m-6 { width: 50%; }
+  .col-m-7 { width: 58.33%; }
+  .col-m-8 { width: 66.66%; }
+  .col-m-9 { width: 75%; }
+  .col-m-10 { width: 83.33%; }
+  .col-m-11 { width: 91.66%; }
+  .col-m-12 { width: 100%; }
+  /*social icon */
+  .social-icon img { width: 50px; height: 50px; margin: 0 auto; padding: 15px; }
+  /*text-home*/
+  .text-home-1 { font-size: 15px; margin-bottom: 25px; }
+  .text-home-2 { font-size: 25px; } }
+@media only screen and (min-width: 900px) { /* For desktop: */
+  .col-1 { width: 8.33%; }
+  .col-2 { width: 16.66%; }
+  .col-3 { width: 25%; }
+  .col-4 { width: 33.33%; }
+  .col-5 { width: 41.66%; }
+  .col-6 { width: 50%; }
+  .col-7 { width: 58.33%; }
+  .col-8 { width: 66.66%; }
+  .col-9 { width: 75%; }
+  .col-10 { width: 83.33%; }
+  .col-11 { width: 91.66%; }
+  .col-12 { width: 100%; }
+  /*social icon */
+  .social-icon img { width: 60px; height: 60px; margin: 0 auto; padding: 15px; }
+  /*text-home*/
+  .text-home-1 { font-size: 30px; margin-bottom: 30px; }
+  .text-home-2 { font-size: 42px; margin-bottom: 30px; } }
+/*menu*/
+.menu-container { display: inline-block; position: fixed; margin: 15px; cursor: pointer; z-index: 100; }
+
+.bar1 { width: 40px; height: 2px; background-color: #fff; margin: 5px; -webkit-transition: 0.2s; -o-transition: 0.2s; -moz-transition: 0.2s; transition: 0.2s; }
+
+.bar1 { margin-top: 0px; }
+
+.menu-container:hover > .bar1 { margin-left: 15px; }
+
+.bar2 { width: 40px; height: 2px; background-color: #fff; margin: 5px; -webkit-transition: 0.2s; -o-transition: 0.2s; -moz-transition: 0.2s; transition: 0.2s; }
+
+.bar2 { margin-left: 15px; }
+
+.menu-container:hover > .bar2 { margin-left: 0px; }
+
+.bar3 { width: 40px; height: 2px; background-color: #fff; margin: 5px; -webkit-transition: 0.2s; -o-transition: 0.2s; -moz-transition: 0.2s; transition: 0.2s; }
+
+.menu-container:hover > .bar3 { margin-left: 15px; }
+
+.bar4 { width: 40px; height: 2px; background-color: #fff; margin: 5px; -webkit-transition: 0.2s; -o-transition: 0.2s; -moz-transition: 0.2s; transition: 0.2s; }
+
+.bar4 { margin-left: 15px; }
+
+.menu-container:hover > .bar4 { margin-left: 0px; }
+
+/*home*/
+.home { max-width: 100%; margin: 0 auto; position: relative; padding: 0; }
+
+.img-home { margin: 0 auto; display: block; position: relative; }
+
+/*social-icon*/
+.social-icon { position: absolute; top: 0; right: 0; }
+
+.social-icon a { text-decoration: none; text-align: center; color: #fff; }
+
+.social-icon a:hover { background: rgba(22, 116, 173, 0.5); }
+
+/*text home*/
+.text-home { font-family: arial; display: inline-block; position: absolute; bottom: 0px; /* position will be on bottom */ left: 0px; width: 100%; color: #ffffff; text-align: center; vertical-align: middle; top: 30%; }
+
+.text-home span { color: #1674ad; }
+
+.scroll-btn { font-family: arial; display: inline-block; position: absolute; bottom: 0px; /* position will be on bottom */ left: 45%; width: auto; vertical-align: middle; }
+
+.scroll-btn .scroll-img { width: 46px; height: 49px; margin: 0 auto; }
+
+.scroll-btn:hover { animation-name: scroll-btn; animation-duration: 0.7s; -webkit-animation-iteration-count: infinite; /* Safari 4.0 - 8.0 */ animation-iteration-count: infinite; }
+
+@keyframes scroll-btn { 0% { bottom: 0px; }
+  100% { bottom: 10px; } }
+
+/*# sourceMappingURL=style.css.map */
