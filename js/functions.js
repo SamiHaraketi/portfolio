@@ -18,3 +18,41 @@ $('a[href*="#"]')
       }
     }
   });
+
+
+/*map funtion*/
+ function myMap() {
+    var mapOptions = {
+        center: new google.maps.LatLng(51.5, -0.12),
+        zoom: 10,
+        mapTypeId: google.maps.MapTypeId.HYBRID
+    }
+var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+}
+
+
+/*function work*/
+$(".img-work").show();
+
+$(".btn-work-all").click(function(){
+  $(".img-work").show();
+
+});
+
+$(".btn-work-ux").click(function(){
+  $(".img-work").hide();
+  $(".ux").show();
+
+});
+
+$(".btn-work-ill").click(function(){
+  $(".img-work").hide();
+  $(".ill").show();
+
+});
+
+$(".btn-work-print").click(function(){
+  $(".img-work").hide();
+  $(".print").show();
+
+});
