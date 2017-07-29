@@ -33,7 +33,7 @@ body
 {
     position:absolute;
     top:0;
-    right:0;
+    right:15px;
 }
 .social-icon a
 {
@@ -76,8 +76,8 @@ body
     font-family: arial;
     display: inline-block;
     position: absolute;
-    bottom:0px; /* position will be on bottom */
-    left:45%;
+    bottom:3%; /* position will be on bottom */
+    left:47%;
     width:auto;
     vertical-align: middle;
 
@@ -99,6 +99,122 @@ body
 }
 
 @keyframes scroll-btn {
-    0%   {bottom:0px;}
-    100% {bottom:10px;}
+    0%   {bottom:3%;}
+    50% {bottom:5%;}
+    100% {bottom:3%;}
+
+}
+
+/*about*/
+
+
+.full-text-about
+{
+    padding:10px;
+}
+.title-about
+{
+    color:#1674ad;
+    font-family:arial;
+    font-weight:bold;
+    border-bottom: solid 1px #1674ad;
+    padding-bottom:10px;
+    text-align:center;
+    width:50%;
+    margin: 0 auto;
+
+}
+
+.text-about
+{
+    color:#555154;
+    font-family:arial;
+    margin: 0 auto;
+    padding:10px;
+
+}
+
+
+.btn-d
+{
+    width:200px;
+    margin: 0 auto;
+}
+.btn-download
+{
+    border-radius: 2px;
+    background-color:#1674ad;
+    box-shadow:1px 1px 1px rgba(0,0,0,0.5);
+    border:none;
+    height:50px;
+    width:200px;
+    color:#fff;
+    font-family:arial;
+    cursor:pointer;
+    &:hover,
+    &:focus
+    {
+    background-color:#116a9f;
+    }
+}
+
+
+
+.img-about
+{
+    width:50%;
+    margin:0 auto;
+}
+
+
+/*service*/
+
+.service
+{
+    background-image: url("../../img/service.png");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding:10px;
+    display: table;  
+    position:relative;
+    width:100%;
+}
+
+
+.title-service
+{
+    color:#fff;
+    font-family:arial;
+    font-weight:bold;
+    border-bottom: solid 1px #fff;
+    padding-bottom:10px;
+    text-align:center;
+    margin: 0 auto;
+}
+
+.service span
+{
+    color:#1674ad;
+}
+
+
+.service-container
+{
+    max-width: 800px;
+    margin: 0 auto;
+    margin-top: 30px;
+    height: auto;
+    display: table;  
+
+}
+
+
+.text-service
+{
+    color:#fff;
+    text-align:center;
+    font-family:arial;
+    padding-top:10px;
 }

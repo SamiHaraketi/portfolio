@@ -4,7 +4,7 @@ $height-bar:2px;
 $margin-bar:5px;
 $margin-container:15px;
 
-@mixin animation-menu($Time:0.2s)
+@mixin animation($Time:0.2s)
 {
 	-webkit-transition:  $Time; 
 	-o-transition:  $Time; 
@@ -18,6 +18,7 @@ $margin-container:15px;
 	display: inline-block;
 	position:fixed;
 	margin:$margin-container;
+	margin-left:30px;
     cursor: pointer;
     z-index:100;
 }
@@ -30,7 +31,7 @@ $margin-container:15px;
     height: $height-bar;
     background-color: #fff;
     margin: $margin-bar;
-    @include animation-menu;	
+    @include animation;	
 	}
 
 	@if $bar == 1

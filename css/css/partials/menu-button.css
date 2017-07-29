@@ -1,5 +1,5 @@
 /*menu*/
-.menu-container { display: inline-block; position: fixed; margin: 15px; cursor: pointer; z-index: 100; }
+.menu-container { display: inline-block; position: fixed; margin: 15px; margin-left: 30px; cursor: pointer; z-index: 100; }
 
 .bar1 { width: 40px; height: 2px; background-color: #fff; margin: 5px; -webkit-transition: 0.2s; -o-transition: 0.2s; -moz-transition: 0.2s; transition: 0.2s; }
 

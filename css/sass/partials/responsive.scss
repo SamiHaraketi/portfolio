@@ -61,7 +61,43 @@ img
     font-size:16px;
     }
 
+
+   /*text about*/
+   .title-about
+    {
+        font-size:20px;
+
+    }
+
+    .text-about
+    {
+       font-size:12px; 
+    }
+
+
+    /*service*/
+    .title-service
+    {font-size:20px;}
+
+
+    /*text-service*/
+
+    .service
+    {
+    height: 250px; 
+    }
+    .title-service
+    {
+    font-size:24px;
+    width:40%;
+    }
+    .text-service
+    {
+    font-size:12px;
+    }
+
 }
+
 
 @media only screen and (min-width: 600px)
  {
@@ -99,6 +135,40 @@ img
      .text-home-2
     {
     font-size:25px;
+    }
+
+
+   /*about*/
+   .about
+   {
+    margin:0 auto;
+    width: 80%;
+   }
+   .title-about
+   {
+        font-size:24px;
+
+    }
+
+   .text-about
+   {
+       font-size:16px; 
+   }
+
+      /*service*/
+    .service
+    {
+    height: 400px; 
+    }
+    /*text-service*/
+    .title-service
+    {
+    font-size:24px;
+    width:30%;
+    }
+    .text-service
+    {
+    font-size:16px;
     }
 
 }
@@ -143,4 +213,37 @@ img
     margin-bottom:30px;
 
 }
+
+/*about*/
+.about
+{
+    margin:0 auto;
+    width: 60%;
+}
+.title-about
+{
+        font-size:30px;
+
+}
+
+.text-about
+{
+       font-size:20px; 
+}
+
+    /*text-service*/
+
+    .service
+    {
+    height: 450px; 
+    }    
+    .title-service
+    {
+    font-size:30px;
+    width:25%;
+    }
+    .text-service
+    {
+    font-size:20px;
+    }
 }
