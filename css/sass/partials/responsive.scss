@@ -97,6 +97,31 @@ img
    width:80px;
    font-size:10px;
    }
+
+      /*menu*/
+   /*social icon */
+    .social-icon-menu img
+    {
+    width:50px;
+    height:50px;
+    margin:0 auto;
+    padding:15px;
+    }
+    .menu-name
+    {
+    font-size:30px;
+     margin:10px;
+    }
+    .links
+    {
+    top:20%;
+    margin:0px;
+    &a
+    {
+    font-size:20px;
+    margin:20px;
+    }
+    }
 }
 
 
@@ -182,6 +207,32 @@ img
    width:100px;
    font-size:12px;
    }
+
+   /*menu*/
+   /*social icon */
+    .social-icon-menu img
+    {
+    width:50px;
+    height:50px;
+    margin:0 auto;
+    padding:15px;
+    }
+
+    .menu-name
+    {
+    font-size:40px;
+     margin-top:20px;
+    }
+    .links
+    {
+    top:30%;
+    margin-top:30px;
+    }
+
+    .links a
+    {
+    font-size:22px;
+    }
 }
 
 @media only screen and (min-width: 900px) {
@@ -268,4 +319,31 @@ img
    width:150px;
    font-size:16px;
    }
+
+
+
+   /*menu*/
+   /*social icon */
+    .social-icon-menu img
+    {
+    width:60px;
+    height:60px;
+    margin:0 auto;
+    padding:15px;
+    }
+
+    .menu-name
+    {
+    font-size:40px;
+     margin-top:20px;
+    }
+    .links
+    {
+    top:40%;
+    margin:0px;
+    }
+    .links a
+    {
+    font-size:30px;
+    }
 }

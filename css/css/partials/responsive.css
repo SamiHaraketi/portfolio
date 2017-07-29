@@ -33,7 +33,13 @@ img { width: 100%; height: auto; }
   .title-service { font-size: 24px; width: 40%; }
   .text-service { font-size: 12px; }
   /*work*/
-  .btn-work-row button { width: 80px; font-size: 10px; } }
+  .btn-work-row button { width: 80px; font-size: 10px; }
+  /*menu*/
+  /*social icon */
+  .social-icon-menu img { width: 50px; height: 50px; margin: 0 auto; padding: 15px; }
+  .menu-name { font-size: 30px; margin: 10px; }
+  .links { top: 20%; margin: 0px; }
+  .linksa { font-size: 20px; margin: 20px; } }
 @media only screen and (min-width: 600px) { /* For tablets: */
   .col-m-1 { width: 8.33%; }
   .col-m-2 { width: 16.66%; }
@@ -63,7 +69,13 @@ img { width: 100%; height: auto; }
   .title-service { font-size: 24px; width: 30%; }
   .text-service { font-size: 16px; }
   /*work*/
-  .btn-work-row button { width: 100px; font-size: 12px; } }
+  .btn-work-row button { width: 100px; font-size: 12px; }
+  /*menu*/
+  /*social icon */
+  .social-icon-menu img { width: 50px; height: 50px; margin: 0 auto; padding: 15px; }
+  .menu-name { font-size: 40px; margin-top: 20px; }
+  .links { top: 30%; margin-top: 30px; }
+  .links a { font-size: 22px; } }
 @media only screen and (min-width: 900px) { /* For desktop: */
   .col-1 { width: 8.33%; }
   .col-2 { width: 16.66%; }
@@ -92,6 +104,12 @@ img { width: 100%; height: auto; }
   .title-service { font-size: 30px; width: 25%; }
   .text-service { font-size: 20px; }
   /*work*/
-  .btn-work-row button { width: 150px; font-size: 16px; } }
+  .btn-work-row button { width: 150px; font-size: 16px; }
+  /*menu*/
+  /*social icon */
+  .social-icon-menu img { width: 60px; height: 60px; margin: 0 auto; padding: 15px; }
+  .menu-name { font-size: 40px; margin-top: 20px; }
+  .links { top: 40%; margin: 0px; }
+  .links a { font-size: 30px; } }
 
 /*# sourceMappingURL=responsive.css.map */
