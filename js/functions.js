@@ -93,4 +93,4 @@ linkPage.onclick = function() {
 
 
 
-
+/*home slider*/
