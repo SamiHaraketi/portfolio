@@ -93,4 +93,88 @@ linkPage.onclick = function() {
 
 
 
-/*home slider*/
+/*menu-color*/
+$(document).ready(function(){       
+var scroll_start1 = 0;
+var scroll_start2 = 0;
+
+var startchange1 = $(".hom1");
+var startchange2 = $(".about");
+var startchange3 = $(".service");
+var startchange4 = $(".work");
+var startchange5 = $(".contact");
+
+var offset1 = startchange1.offset();
+var offset2 = startchange2.offset();
+var offset3 = startchange3.offset();
+var offset4 = startchange4.offset();
+var offset5 = startchange5.offset();
+
+
+
+
+ if (startchange2.length){
+ $(document).scroll(function() { 
+  scroll_start2 = $(this).scrollTop();
+  if(scroll_start2 > offset2.top) {
+      $(".bar1").css('background-color', '#1674ad');
+      $(".bar2").css('background-color', '#1674ad');
+      $(".bar3").css('background-color', '#1674ad');
+      $(".bar4").css('background-color', '#1674ad');
+
+   }
+
+   else
+   {
+      $(".bar1").css('background-color', '#fff');
+      $(".bar2").css('background-color', '#fff');
+      $(".bar3").css('background-color', '#fff');
+      $(".bar4").css('background-color', '#fff');    
+   }
+
+});
+}
+
+ if (startchange3.length){
+ $(document).scroll(function() { 
+  scroll_start3 = $(this).scrollTop();
+  if(scroll_start3 > offset3.top) {
+      $(".bar1").css('background-color', '#fff');
+      $(".bar2").css('background-color', '#fff');
+      $(".bar3").css('background-color', '#fff');
+      $(".bar4").css('background-color', '#fff');
+
+   }
+
+});
+}
+ if (startchange4.length){
+ $(document).scroll(function() { 
+  scroll_start4 = $(this).scrollTop();
+  if(scroll_start4 > offset4.top) {
+      $(".bar1").css('background-color', '#1674ad');
+      $(".bar2").css('background-color', '#1674ad');
+      $(".bar3").css('background-color', '#1674ad');
+      $(".bar4").css('background-color', '#1674ad');
+
+   }
+
+});
+}
+
+ if (startchange5.length){
+ $(document).scroll(function() { 
+  scroll_start5 = $(this).scrollTop();
+  if(scroll_start5 > offset5.top) {
+      $(".bar1").css('background-color', '#1674ad');
+      $(".bar2").css('background-color', '#1674ad');
+      $(".bar3").css('background-color', '#1674ad');
+      $(".bar4").css('background-color', '#1674ad');
+
+   }
+
+});
+}
+
+
+});

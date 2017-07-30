@@ -247,13 +247,7 @@ img { width: 100%; height: auto; }
 
 .img-work-row { max-width: 1000px; margin: 0 auto; margin-top: 10px; }
 
-.img-work { padding: 10px; display: block; position: relative; }
-
-.img-div { display: block; position: relative; }
-
-.img-div img { position: absolute; }
-
-.work-text { position: relative; background: rgba(0, 0, 0, 0.1); border: solid; width: 100%; height: 300%; }
+.img-work { padding: 10px; }
 
 /*contact*/
 .contact { display: table; position: relative; width: 100%; margin: 0 auto; margin-top: 50px; background-color: #f6f6f6; padding: 10px; }
