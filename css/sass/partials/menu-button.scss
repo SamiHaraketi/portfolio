@@ -55,15 +55,42 @@ $margin-container:15px;
         margin-left:0px;
       } 
 
+
 	}
 	@else
 	{
       .menu-container:hover > .bar#{$bar}
       {
         margin-left:15px;
-      } 
+      }
+    }
 
-	}
+    @if $bar==2
+    {
+    .change .bar#{$bar}
+      {
+       background-color: #1674ad;
+       width:$width-bar-click;
+      }
+    }
+      @else
+      {
+       .change .bar#{$bar}
+        {
+         opacity:0;
+        }
+      }
+
+    
+
+
+	
+
+
+
+   
+   
+
 }
 
 
@@ -82,6 +109,7 @@ $margin-container:15px;
     display:none;
     margin:0;
 }
+
 
 /* Modal Content */
 .modal-content {
@@ -112,7 +140,6 @@ $margin-container:15px;
 
 
 
-
 /*MENU TEXT*/
 .menu-name
 {
@@ -132,6 +159,10 @@ $margin-container:15px;
 	color:#1674ad;
 	font-family:arial;
 	text-decoration:none;
+    &:hover
+    {
+    color:#0e5e8e;
+    }
 }
 
 
@@ -155,3 +186,22 @@ $margin-container:15px;
     background:rgba(22,116,173,0.5)
     
 }
+
+
+
+.link-page::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #1674ad;
+    transition: width .3s;
+}
+
+.link-page:hover::after {
+    width: 100%;
+    transition: width .3s;
+}
+
+
+
